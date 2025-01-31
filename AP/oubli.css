@@ -1,0 +1,84 @@
+/* oubli.css */
+
+/* Réinitialisation des styles par défaut */
+* {
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    margin: 0; /* Supprime la marge par défaut */
+    padding: 0; /* Supprime le remplissage par défaut */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Police moderne */
+    background-color: #f4f7f9; /* Couleur de fond douce */
+    color: #333; /* Couleur du texte */
+    display: flex; /* Utilise Flexbox pour centrer le conteneur */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+.container {
+    width: 400px; /* Largeur fixe pour le conteneur */
+    background-color: #ffffff; /* Couleur de fond du conteneur */
+    border-radius: 12px; /* Coins arrondis */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    padding: 40px; /* Espacement à l'intérieur du conteneur */
+    text-align: center; /* Centre le texte */
+}
+
+h2 {
+    margin-bottom: 30px; /* Espace en bas du titre */
+    color: #007BFF; /* Couleur du titre */
+    font-size: 24px; /* Taille du titre */
+}
+
+label {
+    display: block; /* Chaque label occupe une ligne entière */
+    margin-bottom: 5px; /* Marge en bas pour espacer du champ de saisie */
+    font-weight: bold; /* Met le texte en gras */
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+input[type="email"] {
+    width: 100%; /* Largeur de 100% pour s'adapter au conteneur */
+    padding: 12px; /* Espacement à l'intérieur */
+    margin-bottom: 20px; /* Espacement en bas */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 8px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+    transition: border-color 0.3s; /* Transition pour un effet fluide */
+}
+
+input[type="email"]:focus {
+    border-color: #007BFF; /* Bordure bleue au focus */
+    outline: none; /* Supprime le contour par défaut */
+}
+
+input[type="submit"] {
+    width: 100%; /* Largeur de 100% pour le bouton */
+    padding: 12px; /* Espacement à l'intérieur */
+    background-color: #007BFF; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 8px; /* Coins arrondis */
+    cursor: pointer; /* Change le curseur au survol */
+    font-size: 16px; /* Taille de police du texte */
+    transition: background-color 0.3s; /* Transition pour une couleur de fond fluide */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+.message {
+    margin-top: 70px !important; /* Marge en haut pour espacer des autres éléments */
+    font-size: 16px; /* Taille de la police */
+}
+
+.error-message {
+    color: red; /* Couleur rouge pour les messages d'erreur */
+}
+
+.success-message {
+    color: green; /* Couleur verte pour les messages de succès */
+}
